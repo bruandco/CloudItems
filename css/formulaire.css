@@ -1,0 +1,61 @@
+.verification_formulaire{
+
+}
+
+.ligne_form{
+    margin:5px 5px;
+}
+
+.ligne_form label{
+    display:inline-block;
+    width:100px;
+    float:left;
+    text-align:left;
+    font-weight:bold;
+}
+
+.ligne_form input[type=text],.ligne_form input[type=password]{
+    border:1px solid black;
+    float:left;
+}
+
+.alert_message_obligatoire{
+    border:1px solid red!important;
+    float:left;
+}
+
+#message_erreur{
+    
+}
+
+.message_erreur_champ{
+    
+}
+
+.bouton_action{
+    display:inline-block;
+    width:150px;
+    height:35px;
+    text-transform: uppercase;
+    font-weight:bold;
+    border:1px solid #ddd;
+    cursor:pointer;
+    color:white;
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+    background-color:#474747;   
+}
+
+.bouton_action:hover{
+    -moz-box-shadow : 2px 2px 2px #ddd;
+    top:-10px;
+}
+
+.bloc_champ_formulaire{
+    width:65%;
+    float:left;
+}
+.bloc_bouton_formulaire{
+    width:35%;
+    float:left;
+}

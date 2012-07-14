@@ -1,0 +1,13 @@
+/* Tpl splashScreen.tpl */
+#splashScreen{
+    text-align:center;
+    width:550px;
+    margin:auto;
+    
+}
+#splashScreen .logo{
+    width:500px;
+}
+
+/* page main */
+

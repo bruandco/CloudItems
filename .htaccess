@@ -1,0 +1,7 @@
+Options +FollowSymlinks
+RewriteEngine on
+RewriteBase /CloudItems
+
+RewriteRule ^erreur\.html$  index.php [L]
+
+ErrorDocument 404 /CloudItems/erreur.html
