@@ -5,16 +5,18 @@ require_once ('include/init.php');
 $obj_auth = new authentification();
 $obj_auth->verification_connexion();
 
+$titre_page = 'Mes flux';
+
 require_once ( 'header.php' );
 ?>
 
 <?=$smarty->display('banniere.tpl');?>
 
 <div id="main_bloc">
-    <div id="main_centre">
-    test
-    </div>
-    
+    <?php
+    $smarty->display('mes_flux.tpl');
+    ?>
+
     <?php
     if( ! empty( $_POST['keywords'] ) ){
         $smarty->assign('keywords',$_POST['keywords']);
@@ -23,10 +25,11 @@ require_once ( 'header.php' );
     }
     $smarty->display('menu_gauche.tpl');
     ?>
-    </div>
+    
     <div class="clear"></div>
 </div>
 
 <?php
 require_once ( 'foot.php' );
 ?>
+

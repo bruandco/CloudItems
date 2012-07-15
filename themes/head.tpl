@@ -11,6 +11,7 @@
         <link rel="stylesheet" name="base" href="css/overcast/jquery-ui-1.8.21.custom.css" type="text/css" media="all" />
         <script type="text/javascript" src="include/javascript/jquery-1.7.2.min.js"></script>
         <script type="text/javascript" src="include/javascript/jquery-ui-1.8.21.custom.min.js"></script>
+        <script type="text/javascript" src="include/javascript/jquery.carousel.min.js"></script>
         <script type="text/javascript" src="include/javascript/init.js"></script>
         <script type="text/javascript" src="include/javascript/formulaire.js"></script>
     </head>

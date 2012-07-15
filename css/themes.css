@@ -8,6 +8,64 @@
 #splashScreen .logo{
     width:500px;
 }
+/* Tpl Banniere.tpl */
+#bloc_banniere{
+    width:970px;
+    margin:auto;
+    text-align:left;
+}
+#bloc_banniere img{
+    height:100px;
+}
 
 /* page main */
 
+#main_bloc{
+    width:970px;
+    margin:auto;
+}
+
+#main_menu_gauche{
+    width:200px;
+    float:left; 
+    background-color:#474747;
+}
+#main_menu_gauche ul{
+    padding:0;
+    margin:5px 5px;    
+    list-style-type: none;
+}
+
+#main_menu_gauche ul li{
+    padding:5px 5px;
+    margin:5px;
+    border-left:1px solid #fff;
+    font-weight:bold;
+}
+
+#main_menu_gauche ul li:hover{
+    border-left:0px solid #fff;
+    background-color:orange;
+}
+
+#main_menu_gauche a:link,#main_menu_gauche a:visited,#main_menu_gauche a:active{
+    text-decoration:none;
+    color:white;
+}
+#main_menu_gauche label{
+    color: #fff !important;
+}
+
+#main_centre{
+    width:740px;
+    float:left;
+    height:600px;
+    padding:10px;
+}
+
+/* Tpl resultat_recherche.tpl */
+.keywords{
+    font-weight:bold;
+    color:orange;
+    font-size:14px;
+}

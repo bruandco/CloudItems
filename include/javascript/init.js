@@ -5,6 +5,7 @@ $(document).ready(function(){
         $(this).parent().hide("slow",function(){ $(this).remove(); });    
     });
     
+    // Masquage des messages erreur/valide/warning
     $('.timeout').each(function(){
         var obj = $(this);
         var fx = function(){
@@ -17,4 +18,5 @@ $(document).ready(function(){
         }; 
         setTimeout(fx,5000);    
     });
+
 });

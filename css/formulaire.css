@@ -1,5 +1,5 @@
 .verification_formulaire{
-
+    width:100%;
 }
 
 .ligne_form{
@@ -20,7 +20,7 @@
 }
 
 .alert_message_obligatoire{
-    border:1px solid red!important;
+    border:1px solid orange !important;
     float:left;
 }
 
@@ -41,9 +41,14 @@
     border:1px solid #ddd;
     cursor:pointer;
     color:white;
-    -moz-border-radius:6px;
+    border-radius:6px;
     -webkit-border-radius:6px;
     background-color:#474747;   
+}
+
+.bouton_action:hover{
+    background-color:orange;
+    border:1px solid #787878  
 }
 
 .bouton_action:hover{

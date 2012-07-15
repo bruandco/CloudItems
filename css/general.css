@@ -85,3 +85,10 @@ h1,h2,h3,h4{
     margin:0;
     padding:0;
 }
+
+.titre_section{
+    font-weight:bold;
+    font-size:14px;
+    border-bottom:1px solid black;
+        
+}

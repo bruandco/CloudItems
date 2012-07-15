@@ -8,7 +8,11 @@ class authentification{
     }
 
     public function connexion($u,$m,$l){
-        $requete_connexion = sprintf('select * from utilisateur where login="%s" and password="%s"',mysql_real_escape_string($u),mysql_real_escape_string(hash('sha1',$m)));
+        $requete_connexion = sprintf('select * from utilisateur where login="%s" and password="%s"',
+        mysql_real_escape_string($u),
+        mysql_real_escape_string(hash('sha1',$m))
+        );
+        
         $sql_select = mysql_query($requete_connexion,$l);
         if(mysql_num_rows($sql_select) > 0){
             $data_user = mysql_fetch_array($sql_select);
@@ -30,7 +34,7 @@ class authentification{
     }
     
     public function verification_connexion(){
-        if( ! isset( $_SESSION['auth_id'] ) ){
+        if( ! isset( $_SESSION['auth_id'] ) || (int)$_SESSION['auth_id'] <= 0 ){
             header("location:index.php");    
         } 
     }

@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.11, created on 2012-07-14 21:35:35
+<?php /* Smarty version Smarty-3.1.11, created on 2012-07-15 10:52:34
          compiled from "themes\head.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:52195001219fd4d3c3-13980414%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '61ab068cdf67d93af7d9810618b0b5906873486d' => 
     array (
       0 => 'themes\\head.tpl',
-      1 => 1342301733,
+      1 => 1342349176,
       2 => 'file',
     ),
   ),
@@ -37,6 +37,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
         <link rel="stylesheet" name="base" href="css/overcast/jquery-ui-1.8.21.custom.css" type="text/css" media="all" />
         <script type="text/javascript" src="include/javascript/jquery-1.7.2.min.js"></script>
         <script type="text/javascript" src="include/javascript/jquery-ui-1.8.21.custom.min.js"></script>
+        <script type="text/javascript" src="include/javascript/jquery.carousel.min.js"></script>
         <script type="text/javascript" src="include/javascript/init.js"></script>
         <script type="text/javascript" src="include/javascript/formulaire.js"></script>
     </head>

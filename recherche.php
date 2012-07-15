@@ -5,16 +5,19 @@ require_once ('include/init.php');
 $obj_auth = new authentification();
 $obj_auth->verification_connexion();
 
+$titre_page = 'Recherche';
+
 require_once ( 'header.php' );
 ?>
 
 <?=$smarty->display('banniere.tpl');?>
 
 <div id="main_bloc">
-    <div id="main_centre">
-    test
-    </div>
-    
+    <?php
+    $smarty->assign('keywords',$_POST['keywords']);
+    $smarty->display('resultat_recherche.tpl');
+    ?>
+
     <?php
     if( ! empty( $_POST['keywords'] ) ){
         $smarty->assign('keywords',$_POST['keywords']);
@@ -23,7 +26,7 @@ require_once ( 'header.php' );
     }
     $smarty->display('menu_gauche.tpl');
     ?>
-    </div>
+    
     <div class="clear"></div>
 </div>
 

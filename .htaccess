@@ -1,7 +1,12 @@
 Options +FollowSymlinks
 RewriteEngine on
-RewriteBase /CloudItems
+RewriteBase /CloudItems/
 
 RewriteRule ^erreur\.html$  index.php [L]
+RewriteRule ^connexion\.html$  connexion.php [L]
+RewriteRule ^main\.html$  main.php [L]
+RewriteRule ^compte.html$ mon_compte.php [L]
+RewriteRule ^flux.html$ mes_flux.php [L]
+RewriteRule ^recherche.html$ recherche.php [L]
 
 ErrorDocument 404 /CloudItems/erreur.html

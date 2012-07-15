@@ -5,16 +5,17 @@ require_once ('include/init.php');
 $obj_auth = new authentification();
 $obj_auth->verification_connexion();
 
+$titre_page = 'Mon compte';
+
 require_once ( 'header.php' );
 ?>
 
 <?=$smarty->display('banniere.tpl');?>
 
 <div id="main_bloc">
-    <div id="main_centre">
-    test
-    </div>
     
+    <?=$smarty->display('mon_compte.tpl');?>
+
     <?php
     if( ! empty( $_POST['keywords'] ) ){
         $smarty->assign('keywords',$_POST['keywords']);
@@ -23,7 +24,7 @@ require_once ( 'header.php' );
     }
     $smarty->display('menu_gauche.tpl');
     ?>
-    </div>
+    
     <div class="clear"></div>
 </div>
 
